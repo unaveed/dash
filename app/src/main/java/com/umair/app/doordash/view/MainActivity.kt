@@ -1,7 +1,8 @@
-package com.umair.app.doordash
+package com.umair.app.doordash.view
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.umair.app.doordash.R
 
 class MainActivity : AppCompatActivity() {
 
