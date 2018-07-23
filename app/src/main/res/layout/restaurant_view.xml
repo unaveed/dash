@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/restaurant_overview_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:padding="@dimen/padding_medium"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+  <android.support.constraint.Guideline
+      android:id="@+id/restaurant_image_guideline"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintGuide_percent="0.25"
+      />
+
+  <android.support.constraint.Guideline
+      android:id="@+id/restaurant_text_guideline"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintGuide_percent="0.27"
+      />
+
+  <android.support.constraint.Guideline android:layout_width="wrap_content"
+      android:id="@+id/restaurant_tags_guideline"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintGuide_percent="0.85"
+      />
+
+  <ImageView
+      android:id="@+id/restaurant_image"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:contentDescription="@string/restaurant_thumbnail"
+      android:scaleType="fitCenter"
+      app:layout_constraintDimensionRatio="H, 44:23"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="@id/restaurant_image_guideline"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintBottom_toBottomOf="parent"
+      />
+
+  <TextView
+      android:id="@+id/restaurant_title"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:textStyle="bold"
+      android:textSize="@dimen/text_medium_large"
+      android:maxLines="1"
+      android:ellipsize="end"
+      app:layout_constraintStart_toStartOf="@id/restaurant_text_guideline"
+      app:layout_constraintEnd_toEndOf="parent"
+      />
+
+  <TextView
+      android:id="@+id/restaurant_tags"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      app:layout_constraintStart_toStartOf="@id/restaurant_text_guideline"
+      app:layout_constraintEnd_toStartOf="@id/restaurant_tags_guideline"
+      app:layout_constraintTop_toBottomOf="@id/restaurant_title"
+      android:maxLines="1"
+      android:ellipsize="end"
+      />
+
+  <TextView
+      android:id="@+id/restaurant_open_until"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      app:layout_constraintStart_toStartOf="@id/restaurant_tags_guideline"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/restaurant_title"
+      />
+
+</android.support.constraint.ConstraintLayout>

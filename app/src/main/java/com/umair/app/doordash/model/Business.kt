@@ -1,4 +1,5 @@
 package com.umair.app.doordash.model
+
 import com.google.gson.annotations.SerializedName
 
 data class Business(

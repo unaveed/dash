@@ -11,7 +11,9 @@ class NetworkConstants {
         const val QUERY_OFFSET = "offset"
 
         // URLs
-        const val BASE_URL = "https://api.doordash.com/v2/"
-        const val ENDPOINT_RESTAURANT = "restaurant/"
+        const val BASE_URL = "https://api.doordash.com"
+        const val ENDPOINT_VERSION = "v2"
+        const val ENDPOINT_RESTAURANT = "restaurant"
+        const val DELIMITER = "/"
     }
 }

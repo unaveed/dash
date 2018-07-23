@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Door Dash</string>
+  <string name="app_name">Door Dash</string>
+  <string name="loading">Loading…</string>
+  <string name="restaurant_thumbnail">Thumbnail image of restaurant</string>
 </resources>
